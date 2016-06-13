@@ -14,24 +14,6 @@ getStatus {
 	in "%10c";
 }
 
-getStatusInitial {
-    out "T";
-	in "%1r"
-	   "%(\$1IN_ERROR)1r"
-	   "%(\$1IN_PUMP_STAT)1r"
-	   "\?\?\?"
-	   "%(\$1IN_TEMP)4r";
-}
-
-getStatusBackup {
-    out "T";
-	in "%1r"
-	   "%(\$1IN_ERROR)1r"
-	   "%(\$1IN_PUMP_STAT)1r"
-	   "(\$1IN_DUMMY)3r"
-	   "%(\$1IN_TEMP)4r";
-}
-
 setRate {
 	out "R1%04u";
 }
